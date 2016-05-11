@@ -24,7 +24,7 @@ export default class FakeOwner {
   }
 
   _lookupFactory() {
-    return this[CONTAINER].lookupFactory(...arguments);
+    return this[CONTAINER]._lookupFactory(...arguments);
   }
 
   ownerInjection() {
